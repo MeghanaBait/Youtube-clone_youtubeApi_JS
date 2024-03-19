@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <img src="./images/YouTube-logo.png" class="logo" alt="">
+
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-btn"><img src="./images/search.png" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="./images/mice.png" class="icon" alt="">
+            <img src="./images/video-icon.png" class="icon" alt="">
+            <img src="./images/bell-icon.png" class="icon" alt="">
+            <div class="user-dp">
+                <img src="./images/user.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- sidebar start -->
+        <div class="sidebar">
+            <a href="#" class="links active"><img src="./images/home-icon.png" alt="">Home</a>
+            <a href="#" class="links"><img src="./images/shorts-icon.png" alt="">Shorts</a>
+            <a href="#" class="links"><img src="./images/subscriptions-icon.png" alt="">Subscriptions</a>
+            <hr class="seperator">
+            <a href="#" class="links"><img src="./images/youtchannel-icon.png" alt="">Your Channel</a>
+            <a href="#" class="links"><img src="./images/history-icon.png" alt="">History</a>
+            <a href="#" class="links"><img src="./images/your-video-icon.png" alt="">Your videos</a>
+            <a href="#" class="links"><img src="./images/watch-later-icon.png" alt="">Watch later</a>
+            <a href="#" class="links"><img src="./images/liked-videos-icon.png" alt="">Liked videos</a>
+            <a href="#" class="links"><img src="./images/down-icon.png" alt="">Show more</a>
+        </div>
+    <!-- sidebar ends -->
+    
+    
+    <section class="content">
+        <div class="left">
+            <div id="video-container">
+                <!-- video -->
+            </div>
+        
+            <div id="channel-info"></div>
+            <div class="comment-section">
+                <h2>Comments</h2>
+                <!-- Comments -->
+            </div>
+        </div>
+        <div class="right">
+            <div id="recommended-videos">
+                <!-- Recommented videos -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- official script yt - cdn -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="video.js"></script>
+</body>
+</html>
