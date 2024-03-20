@@ -32,13 +32,13 @@ const displayVideos = (data) => {
 
     videoCardContainer.innerHTML += `
     <div class="video">
-        <a href="video.html?videoId=${data.id}">
-        <img src="${data.snippet.thumbnails.high.url}" alt="${title}" class="thumbnail">
+        <a href="video.html?videoId=${data.id.videoId}">
+        <img src="${data.snippet.thumbnails.high.url}" alt="${data.snippet.title}" class="thumbnail">
         </a>
         <div class="content">
             <img src="${data.channelThumbnail}" class="channel-icon" alt="">
             <div class="info">
-                <a href="video.html?videoId=${data.id}">
+                <a href="video.html?videoId=${data.id.videoId}">
                     <h4 class="title">${truncatedTitle}</h4>
                 </a>
                 <p class="channel-name">${data.snippet.channelTitle}</p>
@@ -63,7 +63,7 @@ function getVideosInfo(videos) {
 
 //Get Videos
 function getVideos(query) {
-    fetch(`${BASE_URL}/search?key=${API_KEY}&part=snippet&type=video&q=${query}&maxResults=1&chart=mostPopular&regionCode=IN`)
+    fetch(`${BASE_URL}/search?key=${API_KEY}&part=snippet&type=video&q=${query}&maxResults=50&chart=mostPopular&regionCode=IN`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data);
