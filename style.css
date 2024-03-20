@@ -236,11 +236,11 @@ a{
 /* video-section starts*/
 .videos-container{
     width: calc(100%);
-    margin-top: 120px;
+    margin-top: 165px;
     padding: 20px 100px;
     display: grid;
-    grid-template-columns: repeat(3,25%);
-    grid-gap: 40px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 70px;
     overflow-x: hidden;
     background: var(--white);
 }
